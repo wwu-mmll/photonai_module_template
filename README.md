@@ -1,5 +1,5 @@
 [![Python application](https://github.com/wwu-mmll/photonai_module_template/actions/workflows/lindandtest.yml/badge.svg)](https://github.com/wwu-mmll/photonai_module_template/actions/workflows/lindandtest.yml)
-[![Coverage Status](https://coveralls.io/repos/github/wwu-mmll/photonai_module_template/badge.svg?branch=master&t=geKPek)](https://coveralls.io/github/wwu-mmll/photonai_module_template?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/wwu-mmll/photonai_module_template/badge.svg?branch=master)](https://coveralls.io/github/wwu-mmll/photonai_module_template?branch=master)
 ![GitHub](https://img.shields.io/github/license/wwu-mmll/photonai_module_template)
 # How to use this template
 This repository is a quick start template for new PHOTONAI modules. To get started simply follow these steps:
