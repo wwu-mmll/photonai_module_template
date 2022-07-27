@@ -5,6 +5,7 @@ class DummyTransformer(BaseEstimator, TransformerMixin):
 
     def __init__(self, dummy_hp: int = None):
         """Dummy Transformer, based on Dummy et al. 2022
+
         Please give examples!
 
         Parameters
@@ -14,17 +15,17 @@ class DummyTransformer(BaseEstimator, TransformerMixin):
 
         Examples
         --------
-            Usage with PHOTONAI Now
-            ```python
-                import stuff
+        Usage with PHOTONAI Now
+        ```python
+            import stuff
 
-                hp = Hyperpipe()
-                hp += PipelineElement("DummyTransformer", dummy)
-            ```
+            hp = Hyperpipe()
+            hp += PipelineElement("DummyTransformer", dummy)
+        ```
 
         Notes
         -----
-            This is only a dummy classifier!
+        This is only a dummy classifier!
         """
         self.dummy_hp = dummy_hp
 

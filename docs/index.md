@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# project_name documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This documentation has to be filled by the author of this package.
 
-## Commands
+To get started with this template:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This repository is a quick start template for new PHOTONAI modules. To get started simply follow these steps:
+1. Klick "Use this template" button
+2. Fill in details for the new PHOTONAI module
+3. Wait for the repository to be created
+4. Wait for the Github Actions to run once
+5. As soon as the "✅ Ready to clone and code." commit appears in your repository you are ready to start coding
+6. (optional) Remove "rename_project.yml" workflow from .github/workflows
+7. (optional) Remove "rename_project.sh" from .github
+8. Remove this how to section from readme
