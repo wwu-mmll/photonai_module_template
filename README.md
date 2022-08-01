@@ -1,6 +1,8 @@
 [![Python application](https://github.com/wwu-mmll/photonai_module_template/actions/workflows/lindandtest.yml/badge.svg)](https://github.com/wwu-mmll/photonai_module_template/actions/workflows/lindandtest.yml)
 [![Coverage Status](https://coveralls.io/repos/github/wwu-mmll/photonai_module_template/badge.svg?branch=master)](https://coveralls.io/github/wwu-mmll/photonai_module_template?branch=master)
 ![GitHub](https://img.shields.io/github/license/wwu-mmll/photonai_module_template)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wwu-mmll_photonai_module_template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wwu-mmll_photonai_module_template)
+
 # How to use this template
 This repository is a quick start template for new photonai modules. To get started simply follow these steps:
 1. Klick "Use this template" button
@@ -33,3 +35,5 @@ In order to add a new Algorithm / Feature to your project you can follow the ste
 - [ ] Expose the algorithm to photonai by adding it to the the `project_name/project_name.json` file with the full path. An example is provided within this repository.  Thereby, the algorithm can be imported via its name, as defined in the json file. Make sure to pick a unique name. 
 
 **In order to access your algorithms and functions in photonai you have to import your module once in your final script. This triggers the registration process in the photonai core module!**
+
+Documentation avaiable at: [Documentation](https://wwu-mmll.github.io/photonai_module_template/)
