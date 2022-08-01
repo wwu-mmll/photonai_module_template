@@ -19,16 +19,17 @@ This repository is a quick start template for new photonai modules. To get start
 - [X] Photonai compatible **init.py** with boilerplate code for registration of new module
 
 # How to implement a photonai module
+
 Take a look at some of our modules like [photonai neuro](https://github.com/wwu-mmll/photonai_neuro) 
 or [photonai graph](https://github.com/wwu-mmll/photonai_graph).
-Feel free to reach out via issues in case of problems.
+Most importantly: Feel free to reach out via issues in case of problems, e.g. by creating an issue at the [photonai repo](https://github.com/wwu-mmll/photonai)
 
-# Development workflow: Add a new algorithm
+##  Development workflow: Add new algorithms
 In order to add a new Algorithm / Feature to your project you can follow the steps below. By providing unit tests, a documentation and an example you maximize code quality and usability of your module.  
-- [ ] Write Learning / Transformer Algorithms Code (remember to adhere to the scikit-learn object API as [documented here](https://wwu-mmll.github.io/photonai/getting_started/custom_algorithm/))
-- [ ] Test Algorithms in Test Folder
-- [ ] Document Algorithms in docs folder by copying and adapting the provided .md file
-- [ ] Provide an example on how to use the Dummy Algorithms in an appropriately named file in the examples folder.
+- [ ] Develop your learning algorithm / transformer / utility code (remember to adhere to the scikit-learn object API as [documented here](https://wwu-mmll.github.io/photonai/getting_started/custom_algorithm/))
+- [ ] Test your algorithms in a respective test file in the `test` folder 
+- [ ] Document algorithms in the `docs` folder by copying and adapting the provided .md file
+- [ ] Provide an example on how to use your algorithms in an appropriately named file in the examples folder.
 - [ ] Expose the algorithm to photonai by adding it to the the `project_name/project_name.json` file with the full path. An example is provided within this repository.  Thereby, the algorithm can be imported via its name, as defined in the json file. Make sure to pick a unique name. 
 
 **In order to access your algorithms and functions in photonai you have to import your module once in your final script. This triggers the registration process in the photonai core module!**
