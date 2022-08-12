@@ -17,9 +17,7 @@ theme:
   palette:
     primary: 'teal'
     accent: 'teal'
-  font:
-    text: 'Roboto'
-    code: 'Space Mono'
+  font: false
   features:
      - toc.integrate
 
