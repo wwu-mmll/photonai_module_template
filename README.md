@@ -19,6 +19,8 @@ This repository is a quick start template for new photonai modules. To get start
 - [X] Continous Integration for testing and documentation updates based on Github Actions.
 - [X] MkDocs-Material based documentation template
 - [X] Photonai compatible **init.py** with boilerplate code for registration of new module
+- [X] pbr based auto-versioning for python releases 
+- [X] blueprint action for pypi publishing (on github release)
 
 # How to implement a photonai module
 
