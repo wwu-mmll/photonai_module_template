@@ -12,3 +12,6 @@ if not os.path.isfile(registered_file):  # pragma: no cover
     reg.add_module(os.path.join(current_path, "project_name.json"))
     with open(os.path.join(registered_file), "w") as f:
         f.write(str(datetime.now()))
+
+from pbr.version import VersionInfo
+__version__ = VersionInfo('<my_package>').release_string()
