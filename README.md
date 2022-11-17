@@ -38,4 +38,8 @@ In order to add a new Algorithm / Feature to your project you can follow the ste
 
 **In order to access your algorithms and functions in photonai you have to import your module once in your final script. This triggers the registration process in the photonai core module!**
 
+## Release a version of your software (on pypi)
+We suggest releasing via the github website. Simply create a release and an according tag.
+The tag is then used as version number and (if configured) the desired version is immediately build and released on pypi.
+
 Documentation avaiable at: [Documentation](https://wwu-mmll.github.io/photonai_module_template/)
