@@ -1,17 +1,32 @@
 import os
 from datetime import datetime
+from photonai.base import PhotonRegistry
 from photonai.photonlogger import logger
 
-current_path = os.path.dirname(os.path.abspath(__file__))
-registered_file = os.path.join(current_path, "registered")
-logger.info("Checking project_name Module Registration")
-if not os.path.isfile(registered_file):  # pragma: no cover
-    logger.info("Registering project_name")
-    from photonai.base import PhotonRegistry
+from .version import __version__
+
+
+def do_register(current_path, registered_file):
     reg = PhotonRegistry()
     reg.add_module(os.path.join(current_path, "project_name.json"))
     with open(os.path.join(registered_file), "w") as f:
-        f.write(str(datetime.now()))
+        f.write(str(__version__))
 
-from pbr.version import VersionInfo
-__version__ = VersionInfo('<my_package>').release_string()
+
+def register():
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    registered_file = os.path.join(current_path, "registered")
+    logger.info("Checking project_name Module Registration")
+    if not os.path.isfile(registered_file):  # pragma: no cover
+        logger.info("Registering project_name Module")
+        do_register(current_path=current_path, registered_file=registered_file)
+    else:
+        with open(os.path.join(registered_file), "r") as f:
+            if f.read() == __version__:
+                logger.info("Current version already registered")
+            else:
+                logger.info("Updating project_name Module")
+                do_register(current_path=current_path, registered_file=registered_file)
+
+
+register()
