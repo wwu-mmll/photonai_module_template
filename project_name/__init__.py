@@ -6,14 +6,14 @@ from photonai.photonlogger import logger
 from .version import __version__
 
 
-def do_register(current_path, registered_file):
+def do_register(current_path, registered_file): # pragma: no cover
     reg = PhotonRegistry()
     reg.add_module(os.path.join(current_path, "project_name.json"))
     with open(os.path.join(registered_file), "w") as f:
         f.write(str(__version__))
 
 
-def register():
+def register(): # pragma: no cover
     current_path = os.path.dirname(os.path.abspath(__file__))
     registered_file = os.path.join(current_path, "registered")
     logger.info("Checking project_name Module Registration")
